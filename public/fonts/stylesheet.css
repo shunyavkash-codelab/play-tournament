@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Maison Neue';
+    src: url('MaisonNeue-Bold.eot');
+    src: url('MaisonNeue-Bold.eot?#iefix') format('embedded-opentype'),
+        url('MaisonNeue-Bold.woff2') format('woff2'),
+        url('MaisonNeue-Bold.woff') format('woff'),
+        url('MaisonNeue-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Styrene A';
+    src: url('StyreneA-Regular.eot');
+    src: url('StyreneA-Regular.eot?#iefix') format('embedded-opentype'),
+        url('StyreneA-Regular.woff2') format('woff2'),
+        url('StyreneA-Regular.woff') format('woff'),
+        url('StyreneA-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeubauGrotesk Hea';
+    src: url('NeubauGrotesk-Sch.eot');
+    src: url('NeubauGrotesk-Sch.eot?#iefix') format('embedded-opentype'),
+        url('NeubauGrotesk-Sch.woff2') format('woff2'),
+        url('NeubauGrotesk-Sch.woff') format('woff'),
+        url('NeubauGrotesk-Sch.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url('MaisonNeue-Book.eot');
+    src: url('MaisonNeue-Book.eot?#iefix') format('embedded-opentype'),
+        url('MaisonNeue-Book.woff2') format('woff2'),
+        url('MaisonNeue-Book.woff') format('woff'),
+        url('MaisonNeue-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

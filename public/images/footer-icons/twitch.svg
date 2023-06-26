@@ -1,0 +1,29 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_11032_5514)">
+<mask id="mask0_11032_5514" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+<path d="M2.80006 0L0 4.7993V34.4007H9.59939V40H15.2003L21.422 34.4007H29.1998L39.2 25.2005V0H2.80006ZM6.40013 3.99928H34.4007V22.7997L29.1998 28.0006H20.0004L15.2003 32.7999V28.0006H6.40013V3.99928Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_11032_5514)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-4.00012 -4.00024H43.2008V44.0007H-4.00012V-4.00024Z" fill="#43EFC9"/>
+</g>
+<mask id="mask1_11032_5514" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="15" y="10" width="5" height="11">
+<path d="M15.9995 20.8004H19.1996V10.3994H15.9995V20.8004Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_11032_5514)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0002 6.40015H23.2005V24.8005H12.0002V6.40015Z" fill="#43EFC9"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.8003 20.0003H18.4004V11.2001H16.8003V20.0003ZM19.2004 21.6003H16.0003C15.5579 21.6003 15.2003 21.2419 15.2003 20.8003V10.4001C15.2003 9.95771 15.5579 9.6001 16.0003 9.6001H19.2004C19.642 9.6001 20.0004 9.95771 20.0004 10.4001V20.8003C20.0004 21.2419 19.642 21.6003 19.2004 21.6003Z" fill="#43EFC9"/>
+<mask id="mask2_11032_5514" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="23" y="10" width="5" height="11">
+<path d="M23.9998 20.8004H27.1998V10.3994H23.9998V20.8004Z" fill="white"/>
+</mask>
+<g mask="url(#mask2_11032_5514)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.0006 6.40015H31.2008V24.8005H20.0006V6.40015Z" fill="#43EFC9"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M24.8006 20.0003H26.4006V11.2001H24.8006V20.0003ZM27.2006 21.6003H24.0006C23.5582 21.6003 23.2006 21.2419 23.2006 20.8003V10.4001C23.2006 9.95771 23.5582 9.6001 24.0006 9.6001H27.2006C27.6423 9.6001 28.0007 9.95771 28.0007 10.4001V20.8003C28.0007 21.2419 27.6423 21.6003 27.2006 21.6003Z" fill="#43EFC9"/>
+</g>
+<defs>
+<clipPath id="clip0_11032_5514">
+<rect width="39.2" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>

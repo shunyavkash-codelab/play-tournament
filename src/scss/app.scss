@@ -1,0 +1,835 @@
+// aos animation
+@import "aos/src/sass/aos";
+
+// slick scss
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
+
+@import "_fonts.scss";
+
+
+// global css
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  user-select: none;
+}
+
+a,
+a:focus {
+  outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+}
+
+body {
+  font-family: 'NeubauGrotesk';
+}
+
+ul {
+  padding-left: 0px;
+  margin: 0px;
+}
+
+ul li {
+  list-style: none;
+}
+
+a,
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.relative {
+  position: relative;
+}
+
+// END global css
+
+body{
+  overflow-x: hidden;
+}
+.logo{
+  max-width: 250px;
+}
+header {
+  &.menu {
+    width: 100%;
+    max-width: calc(100% - 80px);
+    margin: auto;
+    padding: 35px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s all ease-in-out;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    z-index: 99;
+
+    @media screen and (max-width: 767px) {
+      max-width: 100%;
+      padding: 20px;
+    }
+  }
+
+  .navbar-brand {
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 767px) {
+      img{
+        max-width: 95px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      a.humburg-icon {
+        display: none;
+      }
+    }
+  }
+
+  .download-buttons {
+    a.download-btn {
+      display: block;
+      max-width: 120px;
+    }
+
+    a.download-btn:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+}
+
+.theme-button {
+  display: inline-block;
+  background: #000;
+  box-shadow: -2px 0 20px rgb(15 255 202 / 40%), inset 0 0 64px rgb(15 255 202 / 30%), inset 0 0 10px #0fffca;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  justify-content: center;
+  color: #0fffca;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  transition: box-shadow .3s ease;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  line-height: 24px;
+
+  &:hover {
+    box-shadow: -2px 0 40px rgb(15 255 202 / 40%), inset 0 0 64px rgb(15 255 202 / 30%), inset 0 0 10px #0fffca;
+    color: #0fffca;
+  }
+}
+
+.theme-title {
+  font-size: 25px;
+  line-height: 24px;
+  color: #0FFFCA;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+}
+
+.theme-dot {
+  background: rgb(67 239 201 / 08%);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  margin: 0 auto;
+
+  span {
+    width: 2px;
+    height: 2px;
+    margin: auto;
+    display: block;
+    background-color: #43EFC9;
+  }
+}
+
+
+
+// hero section
+.hero-section {
+  overflow-x: hidden;
+  padding-top: 180px;
+  padding-bottom: 40px;
+  background-image: url("../images/hero-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (max-width: 767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 140px;
+  }
+
+  .theme-title {
+    margin-top: 80px;
+    margin-bottom: 45px;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 36px;
+      margin-bottom: 36px;
+    }
+  }
+
+  h1 {
+    font-size: 96px;
+    line-height: 100px;
+    color: #ffffff;
+    font-family: 'NeubauGrotesk';
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 44px;
+      line-height: 55px;
+      letter-spacing: 1.5px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+      font-size: 64px;
+      line-height: 60px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  h3 {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.75px;
+    color: #ffffff60;
+    max-width: 1180px;
+    margin: 0 auto;
+    font-family: 'Styrene A';
+    font-weight: 400;
+
+    @media screen and (max-width: 767px) {
+      font-size: 18px;
+      line-height: 28px;
+      font-family: 'Maison Neue';
+      letter-spacing: 0px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+      font-size: 26px;
+      line-height: 30px;
+    }
+  }
+}
+
+// hero section
+
+
+// hero slider
+.hero-slider {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  .hero-slide {
+    padding: 0px 20px;
+
+    .theme-button {
+      margin-top: 45px;
+      margin-bottom: 25px;
+      white-space: nowrap;
+    }
+
+    .hero-slide-buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: 0.4s all ease-in-out;
+      
+      @media screen and (min-width: 768px) {
+        transition: 0.2s all ease-in-out;
+      }
+    }
+
+    a.hero-view-all-btn {
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.4px;
+      color: #0FFFCA;
+      text-transform: uppercase;
+      font-family: 'Maison Neue';
+      font-weight: 700;
+      align-items: center;
+      margin-bottom: 20px;
+
+      img {
+        width: 24px;
+        height: 24px;
+        margin-left: 5px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  .slick-list {
+    overflow: visible;
+  }
+
+  .slick-dots {
+    li {
+      margin: 0px;
+
+      button:before {
+        content: "";
+        background-color: #ffffff20;
+        opacity: 1;
+        width: 10px;
+        height: 10px;
+        border-radius: 20px;
+        transition: 0.2s all ease-in-out;
+        top: 3px;
+        left: 3px;
+      }
+
+      &.slick-active {
+        button:before {
+          background-color: #0FFFCA;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+
+  .slick-current.slick-active {
+    .hero-slide-buttons {
+      opacity: 1;
+    }
+  }
+
+
+  @media screen and (min-width: 768px) {
+    .hero-slide-mobile {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .hero-slide {
+      padding: 0px 10px;
+    }
+
+    .hero-slide-desktop {
+      display: none;
+    }
+  }
+
+}
+
+// hero slider
+
+
+// logo section
+.partners-section {
+  padding: 100px 0;
+  width: 100%;
+  max-width: calc(100% - 80px);
+  margin: 0 auto;
+
+  @media screen and (max-width: 767px) {
+    max-width: 100%;
+    padding: 65px 0;
+  }
+
+  .theme-title {
+    margin-bottom: 20px;
+  }
+
+  .partners-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      justify-content: flex-start;
+
+      &::-webkit-scrollbar {
+        height: 6px;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: #ffffff00;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: #ffffff00;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: #ffffff00;
+      }
+    }
+
+    .partners-logo {
+      margin: 25px 35px;
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        margin: 20px 25px;
+      }
+
+      @media screen and (max-width: 767px) {
+        margin: 15px 15px;
+      }
+
+      img {
+        max-height: 70px;
+        max-width: 240px;
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+          max-height: 50px;
+          max-width: 200px;
+        }
+
+        @media screen and (max-width: 767px) {
+          max-height: 56px;
+          max-width: 180px;
+        }
+      }
+    }
+  }
+}
+
+// END logo section
+
+// game changers
+.game-section {
+  .theme-title {
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .game-section-title {
+    margin-top: 40px;
+
+    @media screen and (max-width: 767px) {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 60px;
+
+      &>img,
+      .game-changer-oneup-logo {
+        max-width: 310px;
+        width: 100%;
+
+        &:before,
+        &:after {
+          height: 2px;
+        }
+      }
+    }
+
+    h4 {
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: -0.5px;
+      color: #ffffff60;
+      max-width: 900px;
+      margin: 60px auto;
+      font-family: "Styrene A";
+      font-weight: 400;
+
+      @media screen and (max-width: 767px) {
+        font-size: 18px;
+        line-height: 28px;
+        font-family: 'Maison Neue';
+        margin: 35px auto 50px;
+      }
+    }
+  }
+
+  .game-changer-oneup-logo {
+    max-width: 510px;
+    margin: 20px auto 30px;
+    position: relative;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      width: calc(50% - 45px);
+      height: 4px;
+      background: #ffffff;
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    &:before {
+      left: 0;
+    }
+
+    &:after {
+      right: 0;
+    }
+
+  }
+}
+
+// team section
+.team-section {
+  max-width: 1350px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #ffffff00;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #ffffff00;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #ffffff00;
+    }
+  }
+
+  .player-card {
+    margin-bottom: 70px;
+    text-align: center;
+    width: 24%;
+    font-family: "Styrene A";
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+      width: 32%;
+    }
+    
+    @media screen and (max-width: 767px) {
+      width: 180px;
+      flex-shrink: 0;
+      padding: 0px 10px;
+      margin-bottom: 50px;
+    }
+
+    h4 {
+      font-size: 24px;
+      line-height: 36px;
+      font-family: "Styrene A";
+      font-weight: 400;
+      
+      @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 18px;
+      }
+      
+      @media screen and (max-width: 767px) {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 3px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 21px;
+      color: #ffffff60;
+
+      @media screen and (max-width: 767px) {
+        font-size: 09px;
+        line-height: 12px;
+      }
+    }
+  }
+
+  .player-profile {
+    max-width: 230px;
+    margin: 0 auto 10px;
+
+    @media screen and (max-width: 767px) {
+      max-width: 110px;
+    }
+  }
+
+}
+
+// END team section
+
+// apply now section
+.apply-section {
+  margin: 15px auto 150px;
+  padding: 0px 20px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  ul.perks-box {
+    max-width: 770px;
+    padding: 24px 16px;
+    background: #1a1a1a;
+    border-radius: 16px;
+    margin: 40px auto 50px;
+    font-family: 'Maison Neue';
+    color: #ffffff70;
+    font-weight: 400;
+
+
+    li {
+      font-size: 17px;
+      line-height: 20px;
+      position: relative;
+      padding-left: 25px;
+      background-image: url("../images/check.svg");
+      background-repeat: no-repeat;
+      background-size: 16px;
+      background-position: top 1px left;
+
+      &:not(:first-child){
+        margin-top: 30px;
+      }
+
+      span {
+        font-weight: 600;
+        color: #ffffff;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+
+  .theme-button {
+    margin: 0 auto;
+    display: block;
+    max-width: 165px;
+    text-align: center;
+  }
+}
+
+// END apply now section
+
+// END game changers
+
+
+
+// footer css
+
+footer {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 80px;
+  }
+
+  ul.social-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 35px;
+    }
+
+    li {
+      margin: 0 23px;
+
+      a {
+        display: block;
+      }
+
+    }
+  }
+
+  ul.payment-cards {
+    display: flex;
+    justify-content: center;
+
+    li a {
+      display: block;
+      margin: 0px 10px;
+    }
+  }
+
+
+  ul.footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    flex-direction: row;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    li {
+      margin: 0px 10px;
+
+      @media screen and (max-width: 767px) {
+        margin: 0px 10px 20px;
+      }
+    }
+
+    a {
+      font-size: 18px;
+      text-transform: uppercase;
+      opacity: 0.4;
+      display: block;
+      letter-spacing: 2px;
+      font-family: 'Maison Neue';
+      font-weight: 700;
+      transition: 0.3s all ease-in-out;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      @media screen and (max-width: 767px) {
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+
+  }
+
+  .footer-content {
+    margin: 0 auto;
+    max-width: 950px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+    color: #ffffff30;
+    font-family: "Styrene A";
+    font-weight: 400;
+
+    span {
+      color: #0fffca30;
+    }
+  }
+
+}
+
+
+// END footer css
+
+
+// responsive css
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    width: 100%;
+  }
+  .menu.open{
+    background-color: #000000;
+  }
+
+  .download-buttons {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    height: calc(100vh - 70px);
+    top: 70px;
+    background: #000000;
+    width: 100%;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 20px;
+    transition: 0.3s all ease-in-out;
+
+    & > a{
+      margin: 0px auto 20px !important;
+    }
+
+    &.show{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .body-fixed{
+    overflow: hidden;
+  }
+}
